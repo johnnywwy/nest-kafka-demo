@@ -1,0 +1,53 @@
+{
+  "message": {
+    "user": {
+      "id": "123456",
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "roles": [
+        "admin",
+        "user"
+      ],
+      "preferences": {
+        "theme": "dark",
+        "notifications": {
+          "email": true,
+          "sms": false
+        }
+      }
+    },
+    "order": {
+      "orderId": "ORD987654321",
+      "items": [
+        {
+          "productId": "P001",
+          "productName": "Laptop",
+          "quantity": 1,
+          "price": 1200.00,
+          "discount": 0.1
+        },
+        {
+          "productId": "P002",
+          "productName": "Headphones",
+          "quantity": 2,
+          "price": 150.00,
+          "discount": 0.05
+        }
+      ],
+      "totalAmount": 1500.00,
+      "shippingAddress": {
+        "street": "123 Main St",
+        "city": "Metropolis",
+        "state": "NY",
+        "zipCode": "10001"
+      },
+      "paymentStatus": "pending",
+      "paymentMethod": "credit_card"
+    },
+    "metadata": {
+      "timestamp": "2024-11-29T12:30:00Z",
+      "source": "web_app",
+      "environment": "production"
+    }
+  }
+}
