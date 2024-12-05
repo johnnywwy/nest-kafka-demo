@@ -11,11 +11,11 @@ import { KafkaController } from './kafka.controller';
         transport: Transport.KAFKA,
         options: {
           client: {
-            clientId: 'my-kafka-app',
             brokers: ['localhost:9092'], // Kafka broker地址
           },
           consumer: {
-            groupId: 'my-kafka-consumer-group',
+            groupId: '1',
+            allowAutoTopicCreation: true,  // 如果没有偏移量，可以从头开始消费
           },
         },
       },
